@@ -12,6 +12,11 @@ On Form Submit
  - Generate a user object using form data (generateUser)
  - Store user data in localStorage (setuser)
  - Redirect to the map page
+ 
+ ** Button Click
+ - Store user object
+ -Re-direct to map page
+
 
 ** Map Page
 HTML Elements:
@@ -32,8 +37,33 @@ HTML Elements:
  - On form submit
  - update the user data
  - redirect to the map page
+ - quest object:
+ - id:
+ - title:
+ - img:
+ - description
+ - map: coordinates to position on page
+ - choices: [{ multipleChoice1}, {multipleChoice2}, 
+ - {id: , description: , result: , hp: , gold: } }]
+ - description: what the option displays before you select it results: what happens if you select it
 
 
+## QUEST
+- Find the Missing Citizen
+- when finding the citizen you come across a group of vampires
+- fight
+- hide
+- join them
+
+- LOST RELIC
+- Retrieve a relic that will stop the vampires
+- Wolf comes out of the cave, pick the correct relic
+
+- KILL VAMPIRE BOSS
+- journey to vampire castle
+- hide from vampires? fight?
+- enter his lair
+- fight with relic // ring? dagger???
 
 
 
