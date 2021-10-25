@@ -15,4 +15,38 @@
 </head>
 
 <body>
-    
+  <form id="user-form">
+      <label for = "name">
+          Your Name: 
+          <input name ="name" type="text">
+      </label>
+      <legend>Pick Your Race:</legend>
+      <p id="avatars">
+          <label>
+              <input type="radio" name ="race" required value="dark-elf">
+              <img src="assets/darkelf.jpeg">
+              Dark Elf
+          </label>
+          <label>
+              <input type="radio" name="race" required value="khajit">
+              <img src="assets/Kajit2.jpeg.webp">
+              Khajit
+          </label>
+          <label>
+              <input type="radio" name="race" required value="nord">
+              <img src="assets/nord.jpeg.png">
+              Nord
+          </label>
+          <label>
+              <input type="radio" name="race" required value="argonian">
+              <img src="assets/argonian.jpeg.png">
+              Argonian
+          </label>
+      </p>
+      <button>Start Your Quest!</button>
+  </form>
+
+    <script type="module" src="./app.js"></script>
+</body>
+
+</html>
