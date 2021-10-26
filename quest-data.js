@@ -124,3 +124,11 @@ const boss = {
         gold: +500
     }]
 };
+
+const quests = [
+    citizen,
+    relic,
+    boss,
+];
+
+export default quests;
