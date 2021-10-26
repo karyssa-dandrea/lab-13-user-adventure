@@ -18,7 +18,7 @@ export function generateUser(formData){
         gold: 40,
         hp: 100,
         name: formData.get('name'),
-        race: formData.get('race'),
+        race: formData.get('race')
     };
 }
 
