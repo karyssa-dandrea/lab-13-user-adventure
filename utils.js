@@ -44,3 +44,15 @@ export function hasCompletedAllQuests(userObject){
     }
     return true;
 }
+
+export function loadProfile(){
+    const user = getUser();
+    const img = document.getElementById('user-image');
+    img.src = `../assets/${user.race}.png`;
+    const name = document.getElementById('user-name');
+    name.textContent = user.name;
+    const gold = document.getElementById('user-gold');
+    gold.textContent = user.gold;
+    const hp = document.getElementById('user-hp');
+    hp.textContent = hp.user;
+}
