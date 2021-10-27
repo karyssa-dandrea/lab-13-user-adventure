@@ -1,4 +1,6 @@
 import quests from './quest-data.js';
+import { getUser } from './utils.js';
+
 const mapLinks = document.getElementById('map-links');
 
 for (let quest of quests){
@@ -10,3 +12,9 @@ for (let quest of quests){
 
 }
 
+function displaySpan(quest){
+    const span = document.createElement('span');
+    span.textContent = quest.title;
+
+    mapLinks.appendChild(span);
+} 
