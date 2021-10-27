@@ -1,8 +1,9 @@
 import quests from '../quest-data.js';
-import { findByID, setUser, scoreQuest, getUser } from '../utils.js';
+import { findByID, setUser, scoreQuest, getUser, loadProfile } from '../utils.js';
 
 const params = new URLSearchParams(window.location.search);
 const questData = findByID(quests, params.get('id'));
+//loadProfile();
 
 const title = document.getElementById('quest-title');
 title.textContent = questData.title;
@@ -32,6 +33,7 @@ button.textContent = 'Choose My Choice';
 questChoices.append(button);
 
 questChoices.addEventListener('submit', (e)=>{
+    console.log('click');
     e.preventDefault();
     const selectedRadio = document.querySelector('input[type="radio"]:checked');
     const choice = findByID(questData.choices, selectedRadio.value);
@@ -40,15 +42,17 @@ questChoices.addEventListener('submit', (e)=>{
     scoreQuest(choice, questData.id, user);
     setUser(user);
 
-    const questDetails = document.getElementById('quest-details');
+    const questDetails = document.getElementById('quest-description');
+    console.log(questDetails);
     questDetails.classList.add('hidden');
-    const questResults = document.getElementById('results');
+    const questResults = document.getElementById('quest-results');
     const resultP = document.createElement('p');
     resultP.textContent = choice.result;
     const backLink = document.createElement('a');
-    backLink.href = '../map';
+    backLink.href = '../maps';
     backLink.textContent = 'Back to Map';
 
     questResults.append(resultP, backLink);
     questResults.classList.remove('hidden');
+    //loadProfile();
 });
