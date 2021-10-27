@@ -2,3 +2,9 @@
     display: flex;
     flex-direction: column;
 }
+
+body {
+    background-image: url(../assets/map2.jpeg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
