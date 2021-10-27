@@ -48,7 +48,6 @@ export function hasCompletedAllQuests(userObject){
 export function loadProfile(){
     const user = getUser();
     const img = document.getElementById('user-image');
-    console.log(img);
     img.src = `../assets/${user.race}.png`;
     const name = document.getElementById('user-name');
     name.textContent = user.name;

@@ -1,5 +1,5 @@
 import quests from '../quest-data.js';
-import { findByID, setUser, scoreQuest, getUser, loadProfile } from '../utils.js';
+import { findByID, setUser, scoreQuest, getUser } from '../utils.js';
 
 const params = new URLSearchParams(window.location.search);
 const questData = findByID(quests, params.get('id'));
@@ -33,7 +33,6 @@ button.textContent = 'Choose My Choice';
 questChoices.append(button);
 
 questChoices.addEventListener('submit', (e)=>{
-    console.log('click');
     e.preventDefault();
     const selectedRadio = document.querySelector('input[type="radio"]:checked');
     const choice = findByID(questData.choices, selectedRadio.value);
@@ -43,7 +42,6 @@ questChoices.addEventListener('submit', (e)=>{
     setUser(user);
 
     const questDetails = document.getElementById('quest-description');
-    console.log(questDetails);
     questDetails.classList.add('hidden');
     const questResults = document.getElementById('quest-results');
     const resultP = document.createElement('p');
