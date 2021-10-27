@@ -1,5 +1,5 @@
-import quests from './quest-data.js';
-import { findByID, setUser, scoreQuest, getUser } from './utils.js';
+import quests from '../quest-data.js';
+import { findByID, setUser, scoreQuest, getUser } from '../utils.js';
 
 const params = new URLSearchParams(window.location.search);
 const questData = findByID(quests, params.get('id'));
@@ -7,7 +7,7 @@ const questData = findByID(quests, params.get('id'));
 const title = document.getElementById('quest-title');
 title.textContent = questData.title;
 const img = document.getElementById('quest-image');
-img.src = `../assets/quests/${questData.image}`;
+img.src = questData.image;
 const description = document.getElementById('quest-description');
 description.textContent = questData.description;
 

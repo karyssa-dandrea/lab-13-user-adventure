@@ -5,7 +5,7 @@ const citizen = {
         top: '89%',
         left: '44%'
     },
-    image: 'citizen.jpeg.webp',
+    image: '../assets/citizen.jpeg.webp',
     description: `You enter your village and someone comes running for help!
     Their father was taken in the night by a mysterious creature. You follow a blood trail
     until you reach a cave and to see a group of Vampires! What do you do?`,
@@ -47,7 +47,7 @@ const relic = {
         top: '89%',
         left: '44%'
     },
-    image: 'Ancestor-Glade.jpeg.webp',
+    image: '../assets/Ancestor_Glade.jpeg.webp',
     description: `You journey across the realm to find a place that is only heard about in legends.
     Following all the clues you find a hidden stairwell in the mountains. It leads you to a beautiful
     underground glade. There you find a chest where the relic is suppose to be. 
@@ -91,7 +91,7 @@ const boss = {
         top: '89%',
         left: '44%'
     },
-    image: 'harkon.jpeg',
+    image: '../assets/harkon.jpeg',
     description: `Your village travels to the Vampire's lair where a huge battle takes place.
     You head up the castle to find the vampire leader named Lord Harkon. He demands the relic
     and says if you give it to him he will spare you and turn you into a powerful vampire.
