@@ -1,5 +1,5 @@
 import quests from '../quest-data.js';
-import { getUser } from '../utils.js';
+//import { getUser } from '../utils.js';
 
 const mapLinks = document.getElementById('map-links');
 
