@@ -54,5 +54,5 @@ export function loadProfile(){
     const gold = document.getElementById('user-gold');
     gold.textContent = user.gold;
     const hp = document.getElementById('user-hp');
-    hp.textContent = hp.user;
+    hp.textContent = user.hp;
 }
