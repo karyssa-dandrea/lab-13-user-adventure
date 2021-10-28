@@ -14,3 +14,7 @@ body {
     text-align: center;
     font-size: larger;
 }
+
+#user-image {
+    width: 200px;
+}
