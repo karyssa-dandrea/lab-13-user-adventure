@@ -76,7 +76,7 @@ test('scoreQuest should update gold, hp, and completed on the userObject', (expe
     expect.equal(userObject.completed[questId], true);
 });
 
-test('hasCompletedAllQuests returns ftrue if the user has completed all quests', (expect) => {
+test('hasCompletedAllQuests returns if true if the user has completed all quests', (expect) => {
     const userObject = {
         completed: { citizen: true, relic: true, boss: true },
     };
