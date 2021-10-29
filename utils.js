@@ -52,7 +52,7 @@ export function loadProfile(){
     const name = document.getElementById('user-name');
     name.textContent = user.name;
     const gold = document.getElementById('user-gold');
-    gold.textContent = user.gold;
+    gold.textContent = `Gold Remaining: ${user.gold}`;
     const hp = document.getElementById('user-hp');
-    hp.textContent = user.hp;
+    hp.textContent = `HP Remaining: ${user.hp}`;
 }
